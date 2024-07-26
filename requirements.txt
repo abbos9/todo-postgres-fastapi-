@@ -7,3 +7,5 @@ passlib
 python-multipart
 pyjwt
 bcrypt
+psycopg2
+alembic

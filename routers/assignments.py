@@ -8,7 +8,7 @@ from database import SessionLocal
 from models import AssignmentTable, UsersTable
 import models, schemas, crud
 from sqlalchemy.orm import Session
-from utils import get_current_user
+from utils.auth_utils import get_current_user
 
 router = APIRouter(
     prefix="/assignments",

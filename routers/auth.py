@@ -8,7 +8,7 @@ from config import ACCESS_TOKEN_EXPIRE_MINUTES
 from database import SessionLocal
 from models import UsersTable
 from schemas import CreateUserSchema, TokenSchema, UserResponseSchema
-from utils import bcrypt_context, authenticate_user, create_access_token, get_current_user
+from utils.auth_utils import bcrypt_context, authenticate_user, create_access_token, get_current_user
 
 router = APIRouter(
     prefix="/auth",
